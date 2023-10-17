@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "robot";
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+body a{
+    text-decoration: none;
+}
+:root{
+    --font-color:#212529;
+    --color-purple:#3f51b5;
+    --theme-purple:linear-gradient(to right, #da8cff, #9a55ff) ;
+}
+@font-face {
+    font-family: "robot";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "robot m";
+    src: url("../fonts/Roboto/Roboto-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "robot b";
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: 500;
+}
+button{
+    cursor: pointer;
+}
+.login-bg{
+    background: url(../images/bg01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 20px;
+}
+.login-form{
+    padding: 60px 40px;
+}
+.login-form h2{
+   font-size: 30px;
+   font-family: "robot m";
+   color: var(--font-color);
+   margin-bottom: 8px;
+}
+.login-form .text-muted{
+    color: #96a2b4;
+    font-size: 18px;
+}
+.login-form .text-muted a{
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    margin: 0 10px;
+}
+.login-form .forms{
+    margin: 30px 0;
+}
+.login-form .forms h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.login-form .forms .css-q8hpuo-MuiFormControl-root{
+    margin-bottom: 20px;
+}
+.login-form .remember-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .login-form button.login-btn{
+ background-color: var(--color-purple);
+ color: #fff;
+ padding: 10px;
+ margin: 35px 0 20px 0;
+ font-family: "robot";
+}
+.select-type-btn button{
+    color: #fff;
+    font-size: 14px;
+    font-family: "robot m";
+    text-transform: unset;
+    padding: 7px 15px;
+    box-shadow:  0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.select-type-btn button:hover{
+    background-color: black!important;
+}
+.select-type-btn .admin-btn{
+   background-color: #3f51b5;
+}
+.select-type-btn .teacher-btn{
+    background-color: #ff4081;
+ }
+ .select-type-btn .student-btn{
+    background-color: #f44336;
+ }
+ .social-media {
+    position: relative;
+ }
+ .social-media .or-line{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+ }
+ .social-media .or-line span{
+    color: #96a2b4;
+ }
+ .social-media .or-line span::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #ccc;
+    width: 46%;
+    left: 0;
+    top: 8px;
+ }
+ .social-media .or-line span::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #ccc;
+    width: 46%;
+    right: 0;
+    top: 8px;
+ }
+ .social-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+ }
+ .social-icons .icon1{
+    padding: 5px;
+    border: 1px solid #3c4858;
+    border-radius: 5px;
+    width: 20px;
+    height: 19px;
+    text-align: center;
+    margin: 5px;  
+    cursor: pointer;
+    transition: all .4s ease;
+ }
+ .social-icons .icon1:hover{
+    background-color: #2f55d4;
+    border-color: #2f55d4;
+ }
+ .social-icons .icon1:hover i{
+   color: #fff;
+ }
+ .social-icons .icon1 i{
+    color: #3c4858;
+ }
+ main{
+    background-color: #f0f3fb;
+ }
+ /* ================header============== */
+ header.header{
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+ }
+ .header .header-title{
+    color: var(--font-color);
+    font-size: 18px;
+    font-family: "robot m";
+ }
+ .sidebar .MuiDrawer-paper{
+    border: none!important;
+    background-color: #050440;
+ }
+ /* ========================dashboard============= */
+ .card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #b7c0ce33;
+    width: 100%;
+    height: 100%;
+}
+.front-card{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card h3 {
+    font-size: 20px;
+    font-family: 'robot m';
+    color: #000;
+}
+.card p{
+    font-size: 30px;
+    font-weight: bold;
+    /* font-family: 'robot'; */
+}
+.card-img {
+    padding: 20px;
+    height: 90px;
+    width:90px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #eb32eb36;
+}
+.card-img img{
+    height: 100%;
+    width: 100%;
+}
+div#apexchartsb9b6pzm4{
+    width: 100%;
+}
+.card .graph-heading{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.schedule-table {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2f56d40e;
+    margin-top: 10px;
+}
+.schedule-table h4{
+    font-size: 16px;
+}
+.schl-logo img{
+    width: 50px;
+    height:50px;
+}
+.schl-logo h2{
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 24px;
+}
+.schl-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.profile-section{
+    text-align: center;
+    padding: 10px; 
+}
+.profile-section img{
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px 5px #ccc;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+.profile-section h2{
+    font-size: 16px;
+    font-family: 'robot m'; 
+}
+.profile-section p{
+    font-size: 14px;
+}
+.school-tables img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #96a2b42f;
+}
+.school-tables p{
+    font-size: 14px;
+}
+.action-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.school-tables .css-axafay-MuiDataGrid-virtualScroller::-webkit-scrollbar{
+    display: none;
+}
+.available {
+    background-color: #d6ebe1;
+    border: none;
+    padding: 7px;
+    width: 100px;
+    border-radius: 7px;
+}
+
+
+.available2 {
+    background-color: #198754;
+    border: none;
+    padding: 7px;
+    width: 100px;
+    border-radius: 7px;
+}
+.available1 {
+    background-color: #f11541;
+    border: none;
+    padding: 7px;
+    width: 100px;
+    border-radius: 7px;
+}
+
+.purple-card{
+    /* background: var(--theme-purple); */
+    color: #000;
+}
+ main .main-heading {
+    padding: 15px 0;
+    font-size: 20px!important;
+    color: var(--font-color);
+    font-family: "robot m";
+}
+.inner-form{
+    padding: 30px;
+}
+.theme-btn{
+    background-color: var(--theme-purple)!important;
+    background: var(--theme-purple)!important;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--mdc-protected-button-container-elevation, 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12));
+    margin: 10px;
+    font-size: 15px;
+}
+.theme-btn.cancel{
+    background-color: #f44336!important;
+    background: #f44336!important;
+}
+.button-groups .theme-btn{
+    margin-left: 0;
+}
+.button-groups {
+    margin-top: 10px;
+}
+.inner-form p{
+ font-size: 18px;
+ margin-bottom: 10px;
+}
+.add-class{
+    display: flex;
+    justify-content: end;
+}
+.side-menu span{
+    color: #ffffffc7;
+}
+.schl-logo span{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'robot m';
+}
+.right-side {
+    margin-left: auto;
+}
+.right-side svg{
+    color: #000;
+    max-width: 150px;
+}
+.country fieldset{
+    outline: none;
+    border: none;
+}
+.right-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.country img{
+  width: 26px;
+  height: 26px;
+  margin-top: 5px;
+}
+.header .my-profile-icon{
+    color: #000;
+    text-transform: unset;
+    font-family: "robot m";
+    font-size: 16px;
+}
+.header .my-profile-icon img{
+    margin: 0 10px;
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-menu ul{
+  padding-right: 30px;
+}
+.profile-menu ul li {
+    color: var(--font-color);
+    font-family: 'robot';
+    font-size: 15px;
+}
+.profile-menu ul li svg{
+    color: var(--font-color);
+    margin-right:15px;
+    max-width: 22px;
+}
